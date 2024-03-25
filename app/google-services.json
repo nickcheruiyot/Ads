@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "247747779322",
+    "firebase_url": "https://adverts-c2f17-default-rtdb.firebaseio.com",
+    "project_id": "adverts-c2f17",
+    "storage_bucket": "adverts-c2f17.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:247747779322:android:66f19a3cde72b0fa604743",
+        "android_client_info": {
+          "package_name": "com.example.ads"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuJo6Px5aPojurEsRJ3OaC6ELjf-SEDmE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:247747779322:android:0e5cd5dbcc95b996604743",
+        "android_client_info": {
+          "package_name": "com.example.adverts"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuJo6Px5aPojurEsRJ3OaC6ELjf-SEDmE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
