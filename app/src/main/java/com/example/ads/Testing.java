@@ -88,19 +88,17 @@ public class Testing extends AppCompatActivity implements PlacesAdapter.OnItemCl
         try {
             JSONObject jsonResponse = new JSONObject(responseData);
             JSONArray resultsArray = jsonResponse.getJSONArray("results");
-
             for (int i = 0; i < resultsArray.length(); i++) {
                 JSONObject resultObject = resultsArray.getJSONObject(i);
-
                 String hotelName = resultObject.getString("name");
-                String address = resultObject.getString("address");
-                JSONObject iconObject = resultObject.getJSONObject("icon");
-                String prefix = iconObject.getString("prefix");
-                String suffix = iconObject.getString("suffix");
-                 imageUrl = prefix + "88" + suffix;
+                JSONObject addressObject = resultObject.getJSONObject("location");
+                String addressLocation = addressObject.getString("address");
+//                JSONObject iconObject = resultObject.getJSONObject("categories").getJSONObject(String.valueOf(0)).getJSONObject("icon");
+//                String prefix = iconObject.getString("prefix");
+//                String suffix = iconObject.getString("suffix");
+//                String imageUrl = prefix + "88" + suffix;
 
-
-                Place hotel = new Place(hotelName,lat,lon,address);
+                Place hotel = new Place(hotelName, lat, lon, addressLocation);
                 hotelList.add(hotel);
             }
 
@@ -110,6 +108,7 @@ public class Testing extends AppCompatActivity implements PlacesAdapter.OnItemCl
             e.printStackTrace();
         }
     }
+
 
     @Override
     public void onItemClick(Place place) {
